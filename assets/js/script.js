@@ -66,6 +66,7 @@ document.addEventListener('DOMContentLoaded', function () {
   // You can access a <button> element by using getElementById():
 
   //target  <button id="start">Start Quiz</button>
+  // <div id="start-screen" class="start">
 
 let startScreen = document.getElementById('start-screen');
  
@@ -77,12 +78,15 @@ let startButton = document.getElementById('start');
   // Landing page goes away
 
  // event listener on click
+
+ startButton.addEventListener('click', startQuiz);
+
+
  let currentQuestionIndex = 0;
  let userScore = 0;
  let timer;
  let timeRemaining = 60; // Initial time in seconds
 
- startButton.addEventListener('click', startQuiz);
 
  function startQuiz() {
    startScreen.classList.add('hide');

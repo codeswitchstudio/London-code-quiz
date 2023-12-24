@@ -1,9 +1,6 @@
 
-//! Set of questions --> array of objects
-//! Each question needs the following:
-  //! Question text
-  //! Set of answers
-  //! Which answer is correct
+
+// The startQuiz function is triggered when the "Start Quiz" button is clicked, and it initiates the timer, hides the start screen, and displays the first question. 
 
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -130,6 +127,15 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
   }
+
+
+
+
+
+
+
+
+
 
   
   function updateTimer() {

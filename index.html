@@ -5,35 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Coding Quiz</title>
-
     <link rel="stylesheet" href="./assets/css/styles.css" />
   </head>
 
   <body>
+
+    <audio id="correctSound" src="./assets/sfx/correct-6033.wav"></audio>
+    <audio id="incorrectSound" src="./assets/sfx/wrong-buzzer-6268.wav"></audio>
+
     <div class="scores"><a href="./assets/pages/highscores.html">View Highscores</a></div>
 
     <div class="timer">Time: <span id="time">0</span></div>
 
     <div class="wrapper">
-
       <div id="start-screen" class="start">
-
-          <h1>London Quiz Challenge</h1>
-          <h2>🎡💂🏼‍♂️🇬🇧</h2>
+        <h1>London Quiz Challenge</h1>
+        <h2>🎡💂🏼‍♂️🇬🇧</h2>
         <p>
-          
           Try to answer the following London-related questions within the time
           limit. Keep in mind that incorrect answers will penalize your
           score/time by ten seconds!
         </p>
         <button id="start">Start Quiz</button>
-      
       </div>
 
       <div id="questions" class="hide">
-        <h2 id="question-title"></h2>
 
-        <div id="choices" class="choices"></div>
+        <h2 id="question-title"></h2>
+        <div id="choices" class="choices">
+
+        </div>
+
       </div>
 
       <div id="end-screen" class="hide">
@@ -48,7 +50,11 @@
       <div id="feedback" class="feedback hide"></div>
     </div>
 
+   
+    <!-- Include additional JavaScript files if needed -->
+    <!-- <script src="./assets/js/script copy.js"></script> -->
     <script src="./assets/js/questions.js"></script>
     <script src="./assets/js/logic.js"></script>
+
   </body>
 </html>
