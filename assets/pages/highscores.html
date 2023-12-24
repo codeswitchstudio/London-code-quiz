@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>High Scores</title>
+
+
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body>
+
+  <h1>High Scores</h1>
+
+  <ul id="high-scores-list">
+    <!-- High scores will be dynamically added here -->
+  </ul>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // Retrieve high scores from local storage
+      var highScores = JSON.parse(localStorage.getItem('highScores')) || [];
+
+      // Sort high scores in descending order
+      highScores.sort(function (a, b) {
+        return b.score - a.score;
+      });
+
+      // Display high scores in the HTML
+      var highScoresList = document.getElementById('high-scores-list');
+
+      highScores.forEach(function (score) {
+        var listItem = document.createElement('li');
+        listItem.textContent = score.initials + ': ' + score.score;
+        highScoresList.appendChild(listItem);
+      });
+    });
+  </script>
+
+</body>
+</html>
