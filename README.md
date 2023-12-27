@@ -1,7 +1,7 @@
 # Ye Weird Olde London Pub Quiz
 
 ## Description
-A timed coding quiz with multiple-choice questions about weird facts about my adopted city, London.
+A timed coding quiz with multiple-choice questions covering weird facts about my adopted city, London.
 
 ## Usage
 Quiz rules:
