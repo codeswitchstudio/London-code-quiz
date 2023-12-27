@@ -17,6 +17,13 @@ Quiz rules:
 Link to the deployed application 
 [Ye Weird Olde London Pub Quiz] (https://codeswitchstudio.github.io/London-code-quiz/)
 
+## Screenshots
+
+![Landing page](./assets/img/Screenshot01.png)
+![Question choices](./assets/img/Screenshot02.png)
+![End](./assets/img/Screenshot03.png)
+![High Scores page](./assets/img/Screenshot04.png)
+
 
 ## Credits
 
